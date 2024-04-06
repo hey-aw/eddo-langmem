@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "eddo-langmem"
+version = "0.1.0"
+description = ""
+authors = ["aw <aw@eddo.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langmem = "^0.0.3"
+openai = "^1.16.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
