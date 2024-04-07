@@ -2,6 +2,8 @@
 
 **Revolutionizing Reflection and Progress Tracking in Education**
 
+Demo App: https://eddo-journal.streamlit.app
+
 ## Overview
 
 Eddo Learning Journals is an innovative tool designed to empower students with self-reflection and assessment while providing teachers with invaluable insights into learner thought processes. Through interactive chat sessions driven by an assistant with long-term memory, students are guided to work through their thinking, articulate their understanding, and identify their own "aha" moments. The system captures these insights, providing teachers with a comprehensive view of student progress and areas for intervention.
