@@ -26,7 +26,7 @@ mock_student_data = {
     ],
 }
 
-st.set_page_config(page_title="Emily's Journal", page_icon="📔")
+st.set_page_config(page_title="Eddo Journal", page_icon="📔")
 st.title("Student Learning Dashboard")
 student_id = mock_student_data['student_id']
 
