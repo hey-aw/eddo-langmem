@@ -26,27 +26,24 @@ mock_student_data = {
     ],
 }
 
-def main():
-    st.title("Student Learning Dashboard")
-    student_id = mock_student_data['student_id']
+st.set_page_config(page_title="Emily's Journal", page_icon="📔")
+st.title("Student Learning Dashboard")
+student_id = mock_student_data['student_id']
 
-    col1, col2 = st.columns(2) 
+col1, col2 = st.columns(2) 
 
-    with col1:
-        st.header("Journal Reflections")
-        for thread in mock_student_data['journal_summaries']:
-            st.subheader(thread['date']) 
-            st.write(thread['summary'])  # Using an expander
+with col1:
+    st.header("Journal Reflections")
+    for thread in mock_student_data['journal_summaries']:
+        st.subheader(thread['date']) 
+        st.write(thread['summary'])  # Using an expander
 
-    with col2:
-        st.header("Aha! Moments")
-        aha_df = pd.DataFrame(mock_student_data['aha_moments'])  
+with col2:
+    st.header("Aha! Moments")
+    aha_df = pd.DataFrame(mock_student_data['aha_moments'])  
 
-        for index, row in aha_df.iterrows():
-            st.write("💡 " + row["event"])
-            if row['tags']:
-                st.caption(', '.join(row['tags'])) 
-
-if __name__ == "__main__":
-    main()
+    for index, row in aha_df.iterrows():
+        st.write("💡 " + row["event"])
+        if row['tags']:
+            st.caption(', '.join(row['tags'])) 
 
